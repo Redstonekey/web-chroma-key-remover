@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chromakey Remover</title>
+</head>
+<body>
+    <h1>Remove Chromakey from Images</h1>
+    <form method="post" enctype="multipart/form-data">
+        <label for="chromakey">Chromakey Color (B,G,R):</label>
+        <input type="text" id="chromakey" name="chromakey" value="0,255,0"><br><br>
+
+        <label for="tolerance">Tolerance:</label>
+        <input type="number" id="tolerance" name="tolerance" value="60"><br><br>
+
+        <label for="files">Upload Images:</label>
+        <input type="file" id="files" name="files[]" multiple><br><br>
+
+        <button type="submit">Process Images</button>
+    </form>
+</body>
+</html>
